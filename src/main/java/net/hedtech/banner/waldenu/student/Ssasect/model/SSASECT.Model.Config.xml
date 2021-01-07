@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans 
+	xmlns="urn:schemas:morphis:foundations:formmodel"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:b="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd urn:schemas:morphis:foundations:formmodel http://www.morphis-tech.com/schema/foundations/formmodel.xsd">
+	
+	<b:import resource="classpath:/net/hedtech/banner/waldenu/student/Ssasect/model/SSBSECT.Manager.Config.xml"/>
+	
+	<formModel id="SSASECT.Model.Config" name="SSASECT">
+		<modelClass>net.hedtech.banner.waldenu.student.Ssasect.model.SsasectModel</modelClass>
+		<parameters>
+		</parameters>
+		<businessObjects>
+			<businessObject name="SSBSECT" manager="SSBSECT.Manager.Config">
+			</businessObject>
+		</businessObjects>
+		<valueSets>
+		</valueSets>
+	</formModel>
+</b:beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans 
+	xmlns="urn:schemas:morphis:foundations:task"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:b="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd urn:schemas:morphis:foundations:task http://www.morphis-tech.com/schema/foundations/task.xsd">
+	
+	<!-- model definition -->
+	<b:import resource="classpath:/net/hedtech/banner/waldenu/student/Ssasecq/model/SSASECQ.Model.Config.xml"/>
+	<!-- extension -->
+	<b:import resource="classpath:/net/hedtech/banner/student/schedule/Ssasecq/Ssasecq.Task.Config.xml"/>
+	
+	<task id="SSASECQ.Task.Config" name="SSASECQ">
+		<extension>SSASECQ_WALDENU</extension>
+		
+		<taskClass>net.hedtech.banner.waldenu.student.Ssasecq.SsasecqTask</taskClass>		
+		<!-- struct -->
+		<taskResources>/net/hedtech/banner/waldenu/student/Ssasecq/SsasecqStruct.xml</taskResources>
+		
+		<!-- support code -->
+		<supportCodeConfiguration>
+			<services>net.hedtech.banner.waldenu.student.Ssasecq.services.SsasecqServices</services>
+		</supportCodeConfiguration>
+		
+		<!-- model -->
+		<formModelConfiguration config="SSASECQ.Model.Config"/>
+		
+		<formController>net.hedtech.banner.waldenu.student.Ssasecq.controller.SsasecqFormController</formController>
+		<blockControllers>
+			<block name="SSBSECT">net.hedtech.banner.waldenu.student.Ssasecq.controller.ControllrssbsectController</block>
+		</blockControllers>
+	</task>
+</b:beans>

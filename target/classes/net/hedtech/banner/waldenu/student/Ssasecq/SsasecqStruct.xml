@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FormStructure AlertDataPath="/net/hedtech/banner/waldenu/student/Ssasecq/SsasecqAlerts.xml" FirstNavigationBlock="SSBSECT" LovDataPath="/net/hedtech/banner/waldenu/student/Ssasecq/SsasecqLovs.xml" Name="SSASECQ">
+    <Visual>
+        <Window Id="MAIN_WINDOW" Url="net/hedtech/banner/waldenu/student/Ssasecq/views/ViewMainWindow"/>
+    </Visual>
+    <Logic>
+        <Block Id="SSBSECT">
+            <Item CanvasName="SSBSECT_1_CANVAS" Enabled="false" Id="CROSSLIST_ENRL" Type="DisplayItem"/>
+            <Item CanvasName="SSBSECT_1_CANVAS" Enabled="false" Id="CROSSLIST_SEATS_AVAIL" Type="DisplayItem"/>
+        </Block>
+    </Logic>
+</FormStructure>

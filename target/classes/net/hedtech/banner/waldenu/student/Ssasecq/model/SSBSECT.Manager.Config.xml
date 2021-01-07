@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans 
+	xmlns="urn:schemas:morphis:foundations:businessobject"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:b="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd urn:schemas:morphis:foundations:businessobject http://www.morphis-tech.com/schema/foundations/businessobject.xsd">
+
+	<b:import resource="classpath:/net/hedtech/banner/student/schedule/Ssasecq/model/SSBSECT.Manager.Config.xml"/>
+
+	<manager id="SSBSECT.Manager.Config" name="SSVSECT">
+		<kind>View</kind>
+		<items>
+			<item name="CROSSLIST_ENRL" logicalName="crosslistEnrl" type="java.lang.String" virtual="true">
+			</item>
+			<item name="CROSSLIST_SEATS_AVAIL" logicalName="crosslistSeatsAvail" type="String" virtual="true">
+			</item>
+		</items>
+		
+		<adapterClass>net.hedtech.banner.waldenu.student.Ssasecq.model.SsbsectAdapter</adapterClass>
+		
+		<pagination enabled="true" maximumRows="10"/>
+		
+		
+		
+	</manager>
+</b:beans>

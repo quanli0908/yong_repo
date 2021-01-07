@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans 
+	xmlns="urn:schemas:morphis:foundations:task"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:b="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd urn:schemas:morphis:foundations:task http://www.morphis-tech.com/schema/foundations/task.xsd">
+	
+	<!-- model definition -->
+	<b:import resource="classpath:/net/hedtech/banner/waldenu/student/Ssasect/model/SSASECT.Model.Config.xml"/>
+	<!-- extension -->
+	<b:import resource="classpath:/net/hedtech/banner/student/schedule/Ssasect/Ssasect.Task.Config.xml"/>
+	
+	<task id="SSASECT.Task.Config" name="SSASECT">
+		<extension>SSASECT_WALDEN</extension>
+		
+		<taskClass>net.hedtech.banner.waldenu.student.Ssasect.SsasectTask</taskClass>		
+		<!-- struct -->
+		<taskResources>/net/hedtech/banner/waldenu/student/Ssasect/SsasectStruct.xml</taskResources>
+		
+		<!-- support code -->
+		<supportCodeConfiguration>
+			<services>net.hedtech.banner.waldenu.student.Ssasect.services.SsasectServices</services>
+		</supportCodeConfiguration>
+		
+		<!-- model -->
+		<formModelConfiguration config="SSASECT.Model.Config"/>
+		
+		<formController>net.hedtech.banner.waldenu.student.Ssasect.controller.SsasectFormController</formController>
+		<blockControllers>
+			<block name="SSBSECT">net.hedtech.banner.waldenu.student.Ssasect.controller.ControllrssbsectController</block>
+		</blockControllers>
+	</task>
+</b:beans>

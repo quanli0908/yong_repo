@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FormStructure AlertDataPath="/net/hedtech/banner/waldenu/student/Ssasect/SsasectAlerts.xml" FirstNavigationBlock="KEY_BLOCK" LovDataPath="/net/hedtech/banner/waldenu/student/Ssasect/SsasectLovs.xml" Name="SSASECT">
+    <Visual>
+        <Window Id="MAIN_WINDOW" Title="Schedule" Url="net/hedtech/banner/waldenu/student/Ssasect/views/ViewMainWindow"/>
+    </Visual>
+    <Logic>
+        <Block Id="SSBSECT">
+            <Item CanvasName="ENROLLMENT_CANVAS" Enabled="false" Id="CROSSLIST_ENRL" PageName="ENROLL_DETAILS_TAB" Type="DisplayItem"/>
+            <Item CanvasName="ENROLLMENT_CANVAS" Enabled="false" Id="CROSSLIST_SEATS_AVAIL" PageName="ENROLL_DETAILS_TAB" Type="DisplayItem"/>
+        </Block>
+    </Logic>
+</FormStructure>

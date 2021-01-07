@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:extension xmlns:x="urn:schemas:morphis:frames:extension" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ref="net/hedtech/banner/student/schedule/Ssasect/views/ViewMainWindow.xvc">
+    <x:redefine ref="ssbsectEnrl" name="crosslistEnrl" datatype="String" block="SSBSECT" member="CROSSLIST_ENRL" label="Actual"></x:redefine>
+    <x:redefine ref="ssbsectSeatsAvail" name="crosslistSeatsAvail" label="Remaining" datatype="Date" block="SSBSECT" member="CROSSLIST_SEATS_AVAIL"></x:redefine>
+</x:extension>
